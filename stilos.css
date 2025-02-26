@@ -19,8 +19,11 @@ header img {
     position: absolute;
     left: 20px;
     top: 15px;
-    height: 50px;
+    max-width: 100px; /* No crece más de este tamaño */
+    height: auto;
 }
+
+
 .info-top-right {
     position: absolute;
     top: 15px;

@@ -78,12 +78,12 @@ footer {
 /* Estilos específicos para los carruseles */
 .carousel-item img {
     object-fit: cover;
-    max-height: 250px; /* Tamaño estándar para las imágenes del carrusel */
+    max-height: 25px; /* Tamaño estándar para las imágenes del carrusel */
 }
 
 /* Estilo para las fotos de los estudiantes (Imagen estilo pasaporte) */
 #carouselExampleCaptions2 .carousel-item img {
-    max-height: 150px; /* Ajuste el tamaño de las imágenes a 150px de alto */
+    max-height: 15px; /* Ajuste el tamaño de las imágenes a 150px de alto */
     width: auto;
     border-radius: 50%; /* Hace que las imágenes sean circulares */
     object-fit: cover;

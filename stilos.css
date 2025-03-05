@@ -1,4 +1,4 @@
-/* Estilos Generales */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
 }
 
-/* Encabezado */
+
 header {
     background-color: #2fa3dd;
     color: white;
@@ -35,7 +35,7 @@ header {
     font-size: 14px;
 }
 
-/* Estilos del Carrusel */
+
 .carousel {
     position: relative;
     max-width: 600px;
@@ -90,7 +90,7 @@ button:hover {
 #prevBtn { left: 10px; }
 #nextBtn { right: 10px; }
 
-/* Sección de Información */
+
 .info-section {
     text-align: center;
     margin-top: 30px;
@@ -115,7 +115,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Footer */
+
 footer {
     background-color: #1b365d;
     color: white;

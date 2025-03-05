@@ -1,3 +1,4 @@
+/* Estilos generales para el cuerpo */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +8,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+/* Estilos para el header */
 header {
     background-color: #2fa3dd;
     color: black;
@@ -15,12 +18,14 @@ header {
     text-align: center;
     position: relative;
 }
+
 header img {
     position: absolute;
     left: 20px;
     top: 15px;
     height: 50px;
 }
+
 .info-top-right {
     position: absolute;
     top: 15px;
@@ -28,10 +33,14 @@ header img {
     font-size: 16px;
     text-align: right;
 }
+
+/* Estilos para el main */
 main {
     flex: 1;
     padding: 20px;
 }
+
+/* Estilos para el footer */
 footer {
     background-color: #1b365d;
     color: white;
@@ -40,23 +49,85 @@ footer {
     font-size: 18px;
     margin-top: auto;
 }
+
+/* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
     header {
         padding: 20px;
         font-size: 20px;
     }
+
     header img {
         height: 40px;
         top: 10px;
         left: 10px;
     }
+
     .info-top-right {
         font-size: 14px;
         top: 10px;
         right: 10px;
     }
+
     footer {
         font-size: 16px;
         padding: 10px;
     }
+}
+
+/* Estilos específicos para los carruseles */
+.carousel-item img {
+    object-fit: cover;
+    max-height: 250px; /* Tamaño estándar para las imágenes del carrusel */
+}
+
+/* Estilo para las fotos de los estudiantes (Imagen estilo pasaporte) */
+#carouselExampleCaptions2 .carousel-item img {
+    max-height: 150px; /* Ajuste el tamaño de las imágenes a 150px de alto */
+    width: auto;
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    object-fit: cover;
+}
+
+/* Estilo para la descripción debajo de los carruseles */
+.mt-3 p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Estilos para los cuadros de contenido */
+.container {
+    margin-top: 20px;
+}
+
+.container .row {
+    margin-bottom: 20px;
+}
+
+.container .p-3 {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Estilo para el texto y botones dentro del cuadro 2 */
+.btn-primary {
+    background-color: #2fa3dd;
+    border-color: #2fa3dd;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #2386b4;
+    border-color: #2386b4;
+}
+
+/* Estilo de los cuadros de descripción */
+h5 {
+    font-size: 20px;
+    color: #2fa3dd;
+    margin-bottom: 10px;
 }

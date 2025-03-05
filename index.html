@@ -5,54 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen Parcial</title>
     <script defer src="script.js"></script>
-    <link rel="stylesheet" href="stilos.css">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-        <header>
-            <img src="https://ugb.edu.sv/wp-content/uploads/2024/10/UGB_LOGO_AZUL.png" alt="UGB Logo">
-            Universidad Gerardo Barrios
-            <div class="info-top-right">
-                <p><strong>Carrera:</strong> Ingeniería en Sistemas</p>
-                <p><strong>Código de Estudiante:</strong> SMSS016721</p>
+
+    <header>
+        <img src="https://ugb.edu.sv/wp-content/uploads/2024/10/UGB_LOGO_AZUL.png" alt="UGB Logo">
+        <h1>Universidad Gerardo Barrios</h1>
+        <div class="info-top-right">
+            <p><strong>Carrera:</strong> Ingeniería en Sistemas</p>
+            <p><strong>Código de Estudiante:</strong> SMSS016721</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Galería de Imágenes</h2>
+            <div class="carousel">
+                <button id="prevBtn">&#10094;</button>
+                <img id="image" class="carousel-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXy3DZWeCR_iHdTsDO3qoXaNuvCuhWjgncaA&s" alt="Imagen 1">
+                <button id="nextBtn">&#10095;</button>
             </div>
-        </header>
-        <main>
-            <section>
-                <h2>Galería de Imágenes</h2>
-                <div class="carousel">
-                    <button id="prevBtn">&#10094;</button>
-                    <div class="carousel-container">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXy3DZWeCR_iHdTsDO3qoXaNuvCuhWjgncaA&s" class="carousel-image" alt="Imagen 1">
-                        <img src="https://ugb.edu.sv/wp-content/uploads/2023/06/SLIDER3-scaled.jpg" class="carousel-image" alt="Imagen 2">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-orFGUybgXYdQDoCw5AwbIq99jt_rzNCxKg&s" class="carousel-image" alt="Imagen 3">
-                    </div>
+        </section>
 
-            <section>
-                <h2>¿Qué es el modelo educativo por competencias?</h2>
-                <p>El modelo educativo basado en competencias busca desarrollar habilidades en los estudiantes, preparándolos para el mundo laboral.</p>
-                <button id="infoBtn">Más Información</button>
-                <a href="https://ugb.edu.sv/modelo-educativo/" class="info-button" target="_blank">Más Información</a>
-           
-                <p id="extraInfo" class="hidden">En este modelo, los estudiantes adquieren conocimientos a través de experiencias prácticas y trabajo colaborativo.</p>
-            </section>
-    
-            <custom-card title="Beneficios del modelo">
-                <ul>
-                    <li>Mayor autonomía en el aprendizaje</li>
-                    <li>Énfasis en la práctica</li>
-                    <li>Preparación para el mundo laboral</li>
-                </ul>
-            </custom-card>
-        
+        <section>
+            <h2>¿Qué es el modelo educativo por competencias?</h2>
+            <p>El modelo educativo basado en competencias busca desarrollar habilidades en los estudiantes, preparándolos para el mundo laboral.</p>
             
-        </main>
-        <footer>
-            <p><strong>Nombre del Estudiante:</strong> Alejandro Rivas</p>
-            <p><strong>Nombre del Estudiante:</strong> Cristian Rosa</p>
-            <p><strong>Examen Parcial - Primer Cómputo</strong></p>
-        </footer>
-    </body>
-    </html>
+            <!-- Botón de más información -->
+            <a href="https://ugb.edu.sv/modelo-educativo/" class="info-button" target="_blank">Más Información</a>
+        </section>
+    </main>
 
+    <footer>
+        <p><strong>Nombre del Estudiante:</strong> Alejandro Rivas</p>
+        <p><strong>Nombre del Estudiante:</strong> Cristian Rosa</p>
+        <p><strong>Examen Parcial - Primer Cómputo</strong></p>
+    </footer>
+
+</body>
+</html>

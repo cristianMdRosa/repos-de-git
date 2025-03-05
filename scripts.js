@@ -1,26 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const images = [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXy3DZWeCR_iHdTsDO3qoXaNuvCuhWjgncaA&s",
-        "https://ugb.edu.sv/wp-content/uploads/2023/06/SLIDER3-scaled.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-orFGUybgXYdQDoCw5AwbIq99jt_rzNCxKg&s"
-    ];
-    
+    const images = document.querySelectorAll(".carousel-image");
     let currentIndex = 0;
-    const imageElement = document.getElementById("image");
 
-    function updateImage() {
-        imageElement.src = images[currentIndex];
+    function updateCarousel() {
+        images.forEach((img, index) => {
+            img.classList.toggle("active", index === currentIndex);
+        });
     }
 
     document.getElementById("prevBtn").addEventListener("click", () => {
         currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-        updateImage();
+        updateCarousel();
     });
 
     document.getElementById("nextBtn").addEventListener("click", () => {
         currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-        updateImage();
+        updateCarousel();
     });
 
-    updateImage();
+    updateCarousel();
 });

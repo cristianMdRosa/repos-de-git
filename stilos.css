@@ -13,7 +13,7 @@ header {
     color: black;
     padding: 40px;
     font-size: 24px;
-    text-align: center;
+    text-align: left;
     position: relative;
 }
 
@@ -64,4 +64,23 @@ custom-card {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+}
+/* Estilos del carrusel */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-image {
+    width: 100%;
+    display: none;
+}
+
+.carousel-image.active {
+    display: block;
 }
